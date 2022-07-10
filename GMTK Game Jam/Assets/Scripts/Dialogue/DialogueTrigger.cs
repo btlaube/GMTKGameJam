@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public SpriteRenderer spriteRenderer;
+    public Dialogue dialogue;
+    
+    private DialogueManager dialogueManager;
+
+    void OnEnable() {
+        spriteRenderer.enabled = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start() {
+        dialogueManager = DialogueManager.instance;
+    }
+
+    void Update() {
+        if (Input.GetKeyUp(KeyCode.X)) {
+            TriggerDialogue();
+            spriteRenderer.enabled = false;
+        }
+    }
+
+    public void TriggerDialogue() {
+        dialogueManager.StartDialogue(dialogue);
     }
 }

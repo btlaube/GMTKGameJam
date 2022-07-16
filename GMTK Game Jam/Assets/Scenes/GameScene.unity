@@ -367,6 +367,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bfdd959812b572a4c87961ba2bb5126a, type: 3}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: Dice Roll
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8db0e727cb58b7440a4df18643a84783, type: 3}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Buy Rolls
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ae5cd904e8797f42b74fa61fb01f945, type: 3}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b8f81ab6a7e0d24f9d8be10128c14ee, type: 3}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a287266b051965048a05754212341551, type: 3}
 --- !u!1001 &4192401909370599667

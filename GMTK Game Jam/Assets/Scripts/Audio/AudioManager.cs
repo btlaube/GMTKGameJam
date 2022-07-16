@@ -44,4 +44,18 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();        
     }
 
+    public void SetPitch(string name, float pitch) {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+            Debug.Log("No such audio clip");
+        s.source.pitch = pitch;   
+    }
+
+    public void SetVolume(string name, float volume) {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+            Debug.Log("No such audio clip");
+        s.source.volume = volume;   
+    }
+
 }

@@ -5,6 +5,11 @@ using UnityEngine.UI;
 public class RollsSlot : MonoBehaviour, IDropHandler
 {
     [SerializeField] private Player player;
+    AudioManager audioManager;
+
+    void Start() {
+        audioManager = AudioManager.instance;
+    }
 
     public void OnDrop(PointerEventData eventData) {
         if(eventData.pointerDrag != null) {
@@ -14,7 +19,9 @@ public class RollsSlot : MonoBehaviour, IDropHandler
     }
 
     public void Action(float amount) {
-        Debug.Log("rolls");
+        audioManager.SetPitch("Buy Rolls", 1+(amount/10f));
+        audioManager.Play("Buy Rolls");
+
         player.AddRolls(amount);
     }
 }

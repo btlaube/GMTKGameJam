@@ -14,15 +14,6 @@ public class Player : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-    void Update() {
-        //if(Input.GetKeyDown(KeyCode.Space)) {
-        //    Roll();
-        //}
-        //if(Input.GetKeyDown(KeyCode.S)) {
-        //    TakeDamage(1f);
-        //}
-    }
-
     public void TakeDamage(float damage) {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
     }

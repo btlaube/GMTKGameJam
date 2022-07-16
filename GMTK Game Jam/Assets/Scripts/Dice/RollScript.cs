@@ -17,7 +17,7 @@ public class RollScript : MonoBehaviour
     }
 
     public void Roll() {
-        direction = new Vector3(Random.Range(-1f, 1f), 0f, 1f) * 30f;
+        direction = new Vector3(Random.Range(-1f, 1f), 0f, 1f) * 50f;
 
         GameObject newDice = Instantiate(dice, spawnPoint.position, Random.rotation);
         newDice.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);

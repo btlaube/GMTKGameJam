@@ -7,9 +7,20 @@ public class DiceScript : MonoBehaviour
     public Transform diceGrid;
 
     [SerializeField] private Dice[] diceFaces;
+    private float rerollTime = 4f;
+    private float rerollForce = 10f;
 
     void Awake() {
         diceGrid = GameObject.Find("Dice Grid").transform;
+    }
+
+    void Start() {
+        InvokeRepeating("Reroll", rerollTime, rerollTime);
+    }
+
+    public void Reroll() {
+        Vector3 direction = new Vector3(rerollForce, rerollForce, rerollForce);
+        GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
     }
 
     public void SpawnDiceFace(int face) {

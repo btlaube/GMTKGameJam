@@ -17,6 +17,20 @@ public class Opponent : Player
         if(diceGrid.childCount > 0) {
             
             int action = Random.Range(1, 4);
+            //Special Cases
+            if(currentRolls < 6) {
+                action = 3;
+            }
+            else if(currentRolls > 13) {
+                action = Random.Range(1, 3);
+            }
+            else if(currentHealth < 6) {
+                action = 2;
+            }
+            else if(currentHealth > 100) {
+                action = 1;
+            }
+
             switch (action) {
                 case 1:
                     audioManager.SetVolume("Damage", 0.25f);

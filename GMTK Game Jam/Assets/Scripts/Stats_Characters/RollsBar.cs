@@ -6,8 +6,7 @@ public class RollsBar : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private Image currentRollsBar;
 
-    void Update() {
-        player = GameObject.Find("Player").GetComponent<Player>();        
+    void Update() {               
         currentRollsBar.fillAmount = player.currentRolls / 26;        
     }
 }

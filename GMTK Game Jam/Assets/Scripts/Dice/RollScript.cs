@@ -21,5 +21,7 @@ public class RollScript : MonoBehaviour
 
         GameObject newDice = Instantiate(dice, spawnPoint.position, Random.rotation);
         newDice.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
+
+        player.Roll();
     }
 }

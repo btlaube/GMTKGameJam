@@ -2,19 +2,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class HealSlot : EventTrigger
+public class HealSlot : MonoBehaviour, IDropHandler
 {
-    public Player player;
+    [SerializeField] private Player player;
 
-    public override void OnDrop(PointerEventData eventData) {
+    public void OnDrop(PointerEventData eventData) {
         if(eventData.pointerDrag != null) {
             Destroy(eventData.pointerDrag);
-            Action();
+            Action(eventData.pointerDrag.GetComponent<RolledDice>().dice.amount);
         }
     }
 
-    public void Action() {
+    public void Action(float amount) {
         Debug.Log("heal");
-        //player.Heal();
+        player.Heal(amount);
     }
 }

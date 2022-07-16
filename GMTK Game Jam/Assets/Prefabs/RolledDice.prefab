@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6714813065329740382}
   - component: {fileID: 1529782948371124757}
   - component: {fileID: 9031934956915680307}
+  - component: {fileID: 6836490366559466131}
   m_Layer: 0
   m_Name: RolledDice
   m_TagString: Untagged
@@ -103,3 +104,16 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &6836490366559466131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375951812857718426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288410f6681aeed48bada53b1cb2b519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dice: {fileID: 0}

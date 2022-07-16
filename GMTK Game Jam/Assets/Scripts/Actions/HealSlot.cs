@@ -8,8 +8,8 @@ public class HealSlot : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData) {
         if(eventData.pointerDrag != null) {
-            Destroy(eventData.pointerDrag);
             Action(eventData.pointerDrag.GetComponent<RolledDice>().dice.amount);
+            Destroy(eventData.pointerDrag);
         }
     }
 

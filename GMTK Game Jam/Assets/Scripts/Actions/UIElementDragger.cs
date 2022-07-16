@@ -27,7 +27,6 @@ public class UIElementDragger : EventTrigger {
     }
 
     public override void OnPointerUp(PointerEventData eventData) {
-        Debug.Log("fasdf");
         transform.SetParent(diceGrid);
         dragging = false;
         canvasGroup.blocksRaycasts = true;

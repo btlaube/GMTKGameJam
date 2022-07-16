@@ -5,7 +5,7 @@ public class Opponent : Player
 {
     public Transform diceGrid;
 
-    private static float time = 0.5f; 
+    private static float time = 1f; 
 
     void Start() {
         InvokeRepeating("Action", time, time);

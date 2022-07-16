@@ -20,7 +20,7 @@ public class UIElementDragger : EventTrigger {
     }
 
     public override void OnPointerDown(PointerEventData eventData) {
-        transform.SetParent(transform.parent.parent);
+        transform.SetParent(transform.parent.parent.parent);
         dragging = true;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;

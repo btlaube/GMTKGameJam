@@ -8,7 +8,7 @@ public class OpponentRollScript : MonoBehaviour
     
     private Vector3 direction;
     private bool rolling = false;
-    private static float time = 0.5f;
+    private static float time = 1f;
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space)) {

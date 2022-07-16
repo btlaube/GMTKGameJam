@@ -59,6 +59,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0
 --- !u!1 &3545226895944916613
 GameObject:
@@ -119,6 +128,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0
 --- !u!1 &3827920907678047406
 GameObject:
@@ -179,6 +197,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0
 --- !u!1 &6379386895856636038
 GameObject:
@@ -239,6 +266,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0
 --- !u!1 &6602072141276687262
 GameObject:
@@ -299,6 +335,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0
 --- !u!1 &7669838871286195803
 GameObject:
@@ -1028,4 +1073,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460343}
+  rolledDice: {fileID: 8375951812857718426, guid: ade758fa6e525cf4abb672c38a68be92, type: 3}
+  diceGrid: {fileID: 0}
+  diceFaces:
+  - {fileID: 1285244701746278005, guid: eab64a0611df5ce419b3447afe55a840, type: 3}
+  - {fileID: 1285244701746278005, guid: 22812336e0e85a04bb1743aa3d7957a5, type: 3}
+  - {fileID: 1285244701746278005, guid: 104877d9363824f4ca586861d3a6a4ce, type: 3}
+  - {fileID: 1285244701746278005, guid: 58e06ea5d65b97d4ca636485c0a4c96d, type: 3}
+  - {fileID: 1285244701746278005, guid: 208a39633a6af5b49aa3ab910ec68ec3, type: 3}
+  - {fileID: 1285244701746278005, guid: 03c341dea555efa4b9e1e4a4b81f0825, type: 3}
   landed: 0

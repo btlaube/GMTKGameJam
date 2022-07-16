@@ -27,7 +27,15 @@ public class Player : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
     }
 
+    public void Heal(float amount) {
+        Debug.Log("heal " + amount);
+    }
+
     public void Roll() {
         currentRolls = Mathf.Clamp(currentRolls - 1, 0, startingRolls);
+    }
+
+    public void AddRolls(float amount) {
+        Debug.Log("add " + amount + " rolls");
     }
 }

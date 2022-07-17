@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     public Transform opponentDiceGrid;
     public CanvasGroupScript canvasGroup;
 
+    private bool calledWin = false;
+    private bool calledLose = false;
     private LevelLoader levelLoader;
     private AudioManager audioManager;
 
@@ -21,25 +23,29 @@ public class GameController : MonoBehaviour
         //Loses
         //Player dies
         if(player.currentHealth == 0) {
-            Debug.Log("Lose");
-            Lose();
+            if(!calledLose) {
+                Lose();
+            }
         }
         //Player runs out of dice and rolls
         if(player.currentRolls == 0 && GameObject.Find("Dice(Clone)") == null && gameCanvas.Find("RolledDice(Clone)") == null && playerDiceGrid.childCount == 0) {
-            Debug.Log("Lose");
-            Lose();
+            if(!calledLose) {
+                Lose();
+            }
         }
 
         //Wins
         //Opponent Dies
         if(opponent.currentHealth == 0) {
-            Debug.Log("Win");
-            Win();
+            if(!calledWin) {
+                Win();
+            }
         }
         //Opponent runs out of dice and rolls
         if(opponent.currentRolls == 0 && GameObject.Find("Opponent Dice(Clone)") == null && opponentDiceGrid.childCount == 0) {
-            Debug.Log("Win");
-            Win();
+            if(!calledWin) {
+                Win();
+            }            
         }
 
         if(Input.GetKeyDown(KeyCode.W)) {
@@ -52,12 +58,14 @@ public class GameController : MonoBehaviour
     }
 
     public void Win() {
+        calledWin = true;
         Time.timeScale = 0f;
         canvasGroup.Win();
         audioManager.Play("Victory");
     }
 
     public void Lose() {
+        calledLose = true;
         Time.timeScale = 0f;
         canvasGroup.Lose();
         audioManager.Play("Lose");

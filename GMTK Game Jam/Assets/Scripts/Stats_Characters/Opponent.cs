@@ -5,29 +5,42 @@ public class Opponent : Player
     public Transform diceGrid;
     public Player player;
 
-    private static float time = 1.6f;
+    private float waitTime = 2f;
+    private float timer;
+    private bool speedingUp;
     AudioManager audioManager;
 
     void Start() {
-        InvokeRepeating("Action", time, time);
         audioManager = AudioManager.instance;
+        timer = Time.timeSinceLevelLoad;
+    }
+
+    void Update () {
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            speedingUp = true;
+        }
+        if(speedingUp) {
+            if(Time.timeSinceLevelLoad >= timer + 1f) {
+                Action();
+                waitTime = Mathf.Clamp(waitTime - 0.05f, 0.5f, 2f);
+                Debug.Log(waitTime);
+                timer = Time.timeSinceLevelLoad;
+            }
+        }        
     }
 
     public void Action() {
         if(diceGrid.childCount > 0) {
             
-            int action = Random.Range(1, 4);
+            int action;
             //Special Cases
-            if(currentRolls < 6) {
+            if(currentRolls < 3) {
                 action = 3;
             }
-            else if(currentRolls > 13) {
-                action = Random.Range(1, 3);
-            }
-            else if(currentHealth < 6) {
+            else if(currentHealth < 10) {
                 action = 2;
             }
-            else if(currentHealth > 100) {
+            else {
                 action = 1;
             }
 

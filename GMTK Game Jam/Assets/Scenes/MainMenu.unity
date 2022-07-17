@@ -235,42 +235,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: d14a53497adefc249ad98b2ae3f5553e, type: 3}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[4].name
-      value: Victory
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: de46ebe43b2efda4ea5c24ca55a534a3, type: 3}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[5].name
-      value: Lose
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 818fb6236fb7de7409989c49dc872e6b, type: 3}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[6].name
-      value: Click
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[4].volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106113135118847712, guid: a287266b051965048a05754212341551, type: 3}
-      propertyPath: sounds.Array.data[5].volume
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a287266b051965048a05754212341551, type: 3}
 --- !u!1001 &453521497

@@ -9,6 +9,7 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
 
     private CanvasGroupScript canvasGroup;
+    private AudioManager audioManager;
 
     [SerializeField] private float transitionTime = 1f;
 
@@ -26,6 +27,8 @@ public class LevelLoader : MonoBehaviour
 
     void Start() {
         canvasGroup = CanvasGroupScript.instance;
+        audioManager = AudioManager.instance;
+        audioManager.Play("Music");
     }
 
     public void LoadMainMenu() {

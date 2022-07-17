@@ -245,10 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dice: {fileID: 7669838872249460340, guid: 65fb48de14079aa41bd8e01b67c26c47, type: 3}
   spawnPoint: {fileID: 2207658166191229621}
-  moveSpeed: 0
-  x: -5
-  y: 0
-  z: 30
+  player: {fileID: 0}
 --- !u!1 &2207658166213457912
 GameObject:
   m_ObjectHideFlags: 0

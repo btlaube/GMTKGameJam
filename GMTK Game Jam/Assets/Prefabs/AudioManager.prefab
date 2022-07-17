@@ -44,3 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cea2debcb615ec48ab9200cad0a1eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - name: Dice Roll
+    clip: {fileID: 8300000, guid: bfdd959812b572a4c87961ba2bb5126a, type: 3}
+    volume: 0.5
+    pitch: 1.31
+    loop: 0
+    source: {fileID: 0}
+  - name: Buy Rolls
+    clip: {fileID: 8300000, guid: 8db0e727cb58b7440a4df18643a84783, type: 3}
+    volume: 0.5
+    pitch: 1.31
+    loop: 0
+    source: {fileID: 0}
+  - name: Heal
+    clip: {fileID: 8300000, guid: 1ae5cd904e8797f42b74fa61fb01f945, type: 3}
+    volume: 0.5
+    pitch: 1.31
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: 6b8f81ab6a7e0d24f9d8be10128c14ee, type: 3}
+    volume: 0.5
+    pitch: 1.31
+    loop: 0
+    source: {fileID: 0}

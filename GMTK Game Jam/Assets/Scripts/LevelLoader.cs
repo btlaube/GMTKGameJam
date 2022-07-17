@@ -47,14 +47,6 @@ public class LevelLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelIndex);
 
-        switch(levelIndex) {
-            case 0:
-                canvasGroup.LoadMainMenu();
-                break;
-            case 1:
-                canvasGroup.LoadGameScene();
-                break;
-        }
         transition.SetTrigger("End");
     }
 

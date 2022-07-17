@@ -9,10 +9,12 @@ public class GameController : MonoBehaviour
     public Transform opponentDiceGrid;
     public CanvasGroupScript canvasGroup;
 
-    private LevelLoader levelLoader;    
+    private LevelLoader levelLoader;
+    private AudioManager audioManager;
 
     void Start() {
         levelLoader = LevelLoader.instance;
+        audioManager = AudioManager.instance;
     }
 
     void Update() {
@@ -39,16 +41,26 @@ public class GameController : MonoBehaviour
             Debug.Log("Win");
             Win();
         }
+
+        if(Input.GetKeyDown(KeyCode.W)) {
+            Win();
+        }
+
+        if(Input.GetKeyDown(KeyCode.L)) {
+            Lose();
+        }
     }
 
     public void Win() {
         Time.timeScale = 0f;
         canvasGroup.Win();
+        audioManager.Play("Victory");
     }
 
     public void Lose() {
         Time.timeScale = 0f;
         canvasGroup.Lose();
+        audioManager.Play("Lose");
     }
 
     public void Replay() {

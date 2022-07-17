@@ -69,3 +69,21 @@ MonoBehaviour:
     pitch: 1.31
     loop: 0
     source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 818fb6236fb7de7409989c49dc872e6b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Victory
+    clip: {fileID: 8300000, guid: d14a53497adefc249ad98b2ae3f5553e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 8300000, guid: de46ebe43b2efda4ea5c24ca55a534a3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
